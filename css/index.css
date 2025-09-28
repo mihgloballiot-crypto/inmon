@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+/**********************************************************
+	index.css - 互換性重視版
+***********************************************************/
+
+body #wrapper {
+	width: 960px;
+	margin: 0px auto;
+}
+
+#wrapper #main {
+	float: right;
+	width: 710px;
+}
+
+#main #contents {
+	background-color: transparent;
+	width: 710px;
+	padding: 0px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+/*------------------------------------------------------------
+	パネル状のボックス
+------------------------------------------------------------*/
+#contents .panel {
+	width: 710px;
+}
+
+#contents .panel div {
+	width: 320px;
+	height: 310px;
+	padding: 20px 15px;
+	float: left;
+}
+
+#contents .panel .box01 {
+	background-color: #FFF;
+	margin: 0px 10px 10px 0px;
+	background-image: url(../img/bg_top_box01.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+#contents .panel .box02 {
+	background-color: #c62842;
+	margin: 0px 0px 10px 0px;
+	background-image: url(../img/bg_top_box02.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	color: #FFF;
+}
+
+#contents .panel .box03 {
+	background-color: #FFF;
+	margin: 0px 10px 10px 0px;
+	background-image: url(../img/bg_top_box03.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+#contents .panel .box05 {
+	background-color: #c62842;
+	margin: 0px 0px 10px 0px;
+	background-image: url(../img/bg_top_box05.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	color: #FFF;
+}
+
+/* リンクスタイル */
+#contents .panel .box01 a:link,
+#contents .panel .box01 a:visited,
+#contents .panel .box03 a:link,
+#contents .panel .box03 a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+#contents .panel .box01 a:hover,
+#contents .panel .box01 a:active,
+#contents .panel .box03 a:hover,
+#contents .panel .box03 a:active {
+	color: #bf0524;
+	text-decoration: underline;
+}
+
+#contents .panel .box02 a:link,
+#contents .panel .box02 a:visited,
+#contents .panel .box05 a:link,
+#contents .panel .box05 a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#contents .panel .box02 a:hover,
+#contents .panel .box02 a:active,
+#contents .panel .box05 a:hover,
+#contents .panel .box05 a:active {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------------
+	パネルボックスの中身
+------------------------------------------------------------*/
+/* タイトル */
+.ttl01 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #c62842;
+	line-height: 1;
+}
+
+.ttl02 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #FFF;
+	line-height: 1;
+}
+
+/* リード文 */
+.readtxt01 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.4;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	margin-bottom: 5px;
+}
+
+.readtxt02 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.4;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	margin-bottom: 5px;
+	color: #FFF;
+}
+
+.readtxt03 {
+	font-size: 12px;
+	line-height: 1.4;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	margin-bottom: 5px;
+}
+
+/* リンクのマーク */
+.rink01 {
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 25px;
+	background-image: url(../common/img/chip_arrow04.gif);
+	background-repeat: no-repeat;
+	background-position: left 1px;
+}
+
+.rink02 {
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 25px;
+	background-image: url(../common/img/chip_arrow03.gif);
+	background-repeat: no-repeat;
+	background-position: left 1px;
+}
+
+/* 電話番号テキスト表示 */
+.tel-number {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	color: #c62842;
+	padding: 4px 8px;
+	background-color: #f8f9fa;
+	border: 2px solid #c62842;
+	border-radius: 4px;
+	text-align: center;
+	width: 190px;
+}
+
+/*============================================================
+	メディアクエリで切り替え
+==============================================================*/
+/* 1320px以上 */
+@media only screen and (min-width: 1320px) {
+	body #wrapper {
+		width: 1320px;
+		margin: 0px auto;
+	}	
+
+	#wrapper #main {
+		float: right;
+		width: 1070px;
+	}
+
+	#main #contents {
+		background-color: transparent;
+		width: 1070px;
+		padding: 0px;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+	
+	/* パネル状のボックス */
+	#contents .panel {
+		width: 1070px;
+	}
+	
+	#contents .panel div {
+		width: 320px;
+		height: 310px;
+		padding: 20px 15px;
+		float: left;
+	}
+	
+	#contents .panel .box01 {
+		background-color: #FFF;
+		margin: 0px 10px 10px 0px;
+	}
+	
+	#contents .panel .box02 {
+		background-color: #c62842;
+		margin: 0px 10px 10px 0px;
+	}
+	
+	#contents .panel .box03 {
+		background-color: #FFF;
+		margin: 0px 0px 10px 0px;
+	}
+	
+	#contents .panel .box05 {
+		background-color: #c62842;
+		margin: 0px 0px 10px 0px;
+	}
+}
