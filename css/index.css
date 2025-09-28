@@ -1,32 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 /**********************************************************
-	index.css - モダン対応版
+	index.css - 互換性重視版
 ***********************************************************/
 
-/* リセットCSS */
-*, *::before, *::after {
-	box-sizing: border-box;
-}
-
-/* ベーススタイル */
 body #wrapper {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 0 20px;
+	width: 960px;
+	margin: 0px auto;
 }
 
 #wrapper #main {
 	float: right;
-	width: calc(100% - 250px);
-	min-width: 460px;
+	width: 710px;
 }
 
 #main #contents {
 	background-color: transparent;
-	width: 100%;
-	padding: 0;
+	width: 710px;
+	padding: 0px;
 	margin-bottom: 10px;
 	overflow: hidden;
 }
@@ -35,111 +26,81 @@ body #wrapper {
 	パネル状のボックス
 ------------------------------------------------------------*/
 #contents .panel {
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 10px;
-	margin-bottom: 20px;
+	width: 710px;
 }
 
 #contents .panel div {
-	min-height: 310px;
+	width: 320px;
+	height: 310px;
 	padding: 20px 15px;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: contain;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contents .panel div:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	float: left;
 }
 
 #contents .panel .box01 {
-	background-color: #fff;
+	background-color: #FFF;
+	margin: 0px 10px 10px 0px;
 	background-image: url(../img/bg_top_box01.gif);
-	border: 1px solid #e0e0e0;
-	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 }
 
 #contents .panel .box02 {
 	background-color: #c62842;
+	margin: 0px 0px 10px 0px;
 	background-image: url(../img/bg_top_box02.gif);
-	color: #fff;
-	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	color: #FFF;
 }
 
 #contents .panel .box03 {
-	background-color: #fff;
+	background-color: #FFF;
+	margin: 0px 10px 10px 0px;
 	background-image: url(../img/bg_top_box03.gif);
-	border: 1px solid #e0e0e0;
-	border-radius: 8px;
-}
-
-#contents .panel .box04 {
-	background-color: #c62842;
-	background-image: url(../img/bg_top_box04.gif);
-	color: #fff;
-	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 }
 
 #contents .panel .box05 {
-	background-color: #fff;
-	background-image: url(../img/bg_top_box05.gif);
-	border: 1px solid #e0e0e0;
-	border-radius: 8px;
-}
-
-#contents .panel .box06 {
 	background-color: #c62842;
-	background-image: url(../img/bg_top_box06.gif);
-	color: #fff;
-	border-radius: 8px;
+	margin: 0px 0px 10px 0px;
+	background-image: url(../img/bg_top_box05.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	color: #FFF;
 }
 
 /* リンクスタイル */
 #contents .panel .box01 a:link,
 #contents .panel .box01 a:visited,
 #contents .panel .box03 a:link,
-#contents .panel .box03 a:visited,
-#contents .panel .box05 a:link,
-#contents .panel .box05 a:visited {
+#contents .panel .box03 a:visited {
 	color: #000;
 	text-decoration: none;
-	transition: color 0.3s ease;
 }
 
 #contents .panel .box01 a:hover,
 #contents .panel .box01 a:active,
 #contents .panel .box03 a:hover,
-#contents .panel .box03 a:active,
-#contents .panel .box05 a:hover,
-#contents .panel .box05 a:active {
+#contents .panel .box03 a:active {
 	color: #bf0524;
 	text-decoration: underline;
 }
 
 #contents .panel .box02 a:link,
 #contents .panel .box02 a:visited,
-#contents .panel .box04 a:link,
-#contents .panel .box04 a:visited,
-#contents .panel .box06 a:link,
-#contents .panel .box06 a:visited {
-	color: #fff;
+#contents .panel .box05 a:link,
+#contents .panel .box05 a:visited {
+	color: #FFF;
 	text-decoration: none;
-	transition: opacity 0.3s ease;
 }
 
 #contents .panel .box02 a:hover,
 #contents .panel .box02 a:active,
-#contents .panel .box04 a:hover,
-#contents .panel .box04 a:active,
-#contents .panel .box06 a:hover,
-#contents .panel .box06 a:active {
-	color: #fff;
+#contents .panel .box05 a:hover,
+#contents .panel .box05 a:active {
+	color: #FFF;
 	text-decoration: underline;
-	opacity: 0.9;
 }
 
 /*------------------------------------------------------------
@@ -147,19 +108,19 @@ body #wrapper {
 ------------------------------------------------------------*/
 /* タイトル */
 .ttl01 {
-	font-size: clamp(18px, 4vw, 22px);
+	font-size: 22px;
 	font-weight: bold;
 	margin-bottom: 10px;
 	color: #c62842;
-	line-height: 1.2;
+	line-height: 1;
 }
 
 .ttl02 {
-	font-size: clamp(18px, 4vw, 22px);
+	font-size: 22px;
 	font-weight: bold;
 	margin-bottom: 10px;
-	color: #fff;
-	line-height: 1.2;
+	color: #FFF;
+	line-height: 1;
 }
 
 /* リード文 */
@@ -168,7 +129,9 @@ body #wrapper {
 	font-weight: bold;
 	line-height: 1.4;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #ccc;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
 	margin-bottom: 5px;
 }
 
@@ -177,16 +140,20 @@ body #wrapper {
 	font-weight: bold;
 	line-height: 1.4;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #fff;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
 	margin-bottom: 5px;
-	color: #fff;
+	color: #FFF;
 }
 
 .readtxt03 {
 	font-size: 12px;
 	line-height: 1.4;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #ccc;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
 	margin-bottom: 5px;
 }
 
@@ -209,342 +176,72 @@ body #wrapper {
 	background-position: left 1px;
 }
 
-/*------------------------------------------------------------
-	新着情報
-------------------------------------------------------------*/
-#news {
-	width: 100%;
-	background: #fff;
-	padding: 15px;
-	clear: both;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-#news h2 {
-	background-color: #333;
-	color: #fff;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 8px 15px;
-	margin-bottom: 15px;
-	border-radius: 4px;
-}
-
-#news dl.news {
-	width: 100%;
-	margin: 0;
-}
-
-#news dl.news dt {
-	float: left;
-	width: 100px;
-	clear: both;
-	font-weight: bold;
-	padding: 5px 0 5px 15px;
-	background-image: url(../common/img/chip_arrow02.jpg);
-	background-repeat: no-repeat;
-	background-position: left 9px;
-}
-
-#news dl.news dd {
-	margin-left: 120px;
-	padding: 5px 5px 5px 10px;
-	line-height: 1.5;
-}
-
 /* 電話番号テキスト表示 */
 .tel-number {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
 	color: #c62842;
-	padding: 8px 15px;
-	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+	padding: 4px 8px;
+	background-color: #f8f9fa;
 	border: 2px solid #c62842;
-	border-radius: 6px;
+	border-radius: 4px;
 	text-align: center;
 	width: 190px;
-	transition: all 0.3s ease;
-}
-
-.tel-number:hover {
-	background: linear-gradient(135deg, #c62842 0%, #bf0524 100%);
-	color: #fff;
-	transform: translateY(-1px);
-	box-shadow: 0 4px 8px rgba(198, 40, 66, 0.3);
 }
 
 /*============================================================
-	4ボックスレイアウト調整
+	メディアクエリで切り替え
 ==============================================================*/
-
-/* デスクトップ（1024px以上） */
-@media screen and (min-width: 1024px) {
-	#contents .panel {
-		grid-template-columns: repeat(2, 1fr);
-		max-width: 710px;
-	}
-	
-	#contents .panel div {
-		width: 100%;
-		max-width: 320px;
-	}
-}
-
-/* 大画面（1320px以上） */
-@media screen and (min-width: 1320px) {
-	#contents .panel {
-		grid-template-columns: repeat(2, 1fr);
-		max-width: 1070px;
-		gap: 20px;
-	}
-	
-	#contents .panel div {
-		width: 100%;
-		max-width: 525px;
-	}
-}
-
-/*============================================================
-	レスポンシブデザイン
-==============================================================*/
-
-/* タブレット（768px以上） */
-@media screen and (min-width: 768px) {
+/* 1320px以上 */
+@media only screen and (min-width: 1320px) {
 	body #wrapper {
-		padding: 0 30px;
-	}
-	
-	#contents .panel {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
+		width: 1320px;
+		margin: 0px auto;
+	}	
 
-/* デスクトップ（1024px以上） */
-@media screen and (min-width: 1024px) {
-	body #wrapper {
-		max-width: 960px;
-		padding: 0;
-	}
-	
 	#wrapper #main {
-		width: 710px;
+		float: right;
+		width: 1070px;
 	}
-	
+
 	#main #contents {
-		width: 710px;
+		background-color: transparent;
+		width: 1070px;
+		padding: 0px;
+		margin-bottom: 10px;
+		overflow: hidden;
 	}
 	
+	/* パネル状のボックス */
 	#contents .panel {
-		width: 710px;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 10px;
+		width: 1070px;
 	}
 	
 	#contents .panel div {
 		width: 320px;
 		height: 310px;
+		padding: 20px 15px;
+		float: left;
 	}
 	
-	#news {
-		width: 680px;
+	#contents .panel .box01 {
+		background-color: #FFF;
+		margin: 0px 10px 10px 0px;
 	}
 	
-	#news dl.news {
-		width: 680px;
+	#contents .panel .box02 {
+		background-color: #c62842;
+		margin: 0px 10px 10px 0px;
 	}
 	
-	#news dl.news dd {
-		width: 550px;
-	}
-}
-
-/* 大画面（1320px以上） */
-@media screen and (min-width: 1320px) {
-	body #wrapper {
-		max-width: 1320px;
+	#contents .panel .box03 {
+		background-color: #FFF;
+		margin: 0px 0px 10px 0px;
 	}
 	
-	#wrapper #main {
-		width: 1070px;
-	}
-	
-	#main #contents {
-		width: 1070px;
-	}
-	
-	#fooder #finner {
-		width: 1320px;
-		margin: 0 auto;
-	}
-	
-	#contents .panel {
-		width: 1070px;
-		grid-template-columns: repeat(2, 1fr);
-	}
-	
-	#contents .panel div {
-		width: 525px;
-		height: 310px;
-	}
-	
-	#news {
-		width: 1040px;
-	}
-	
-	#news dl.news {
-		width: 1040px;
-	}
-	
-	#news dl.news dd {
-		width: 910px;
-	}
-}
-
-/* スマートフォン（767px以下） */
-@media screen and (max-width: 767px) {
-	body #wrapper {
-		padding: 0 15px;
-	}
-	
-	#wrapper #main {
-		float: none;
-		width: 100%;
-		min-width: auto;
-	}
-	
-	#contents .panel {
-		grid-template-columns: 1fr;
-		gap: 15px;
-	}
-	
-	#contents .panel div {
-		min-height: 200px;
-		padding: 15px;
-	}
-	
-	#news dl.news dt {
-		float: none;
-		width: 100%;
-		margin-bottom: 5px;
-		padding-left: 20px;
-	}
-	
-	#news dl.news dd {
-		margin-left: 0;
-		padding: 0 0 15px 20px;
-	}
-	
-	/* フォントサイズの調整 */
-	.ttl01, .ttl02 {
-		font-size: 18px;
-	}
-	
-	.readtxt01, .readtxt02 {
-		font-size: 13px;
-	}
-	
-	.rink01, .rink02 {
-		font-size: 14px;
-	}
-}
-
-/* 小画面（480px以下） */
-@media screen and (max-width: 480px) {
-	body #wrapper {
-		padding: 0 10px;
-	}
-	
-	#contents .panel div {
-		padding: 12px;
-		min-height: 180px;
-	}
-	
-	#news {
-		padding: 10px;
-	}
-	
-	.ttl01, .ttl02 {
-		font-size: 16px;
-		margin-bottom: 8px;
-	}
-	
-	.readtxt01, .readtxt02, .readtxt03 {
-		font-size: 12px;
-	}
-	
-	.rink01, .rink02 {
-		font-size: 13px;
-		padding-left: 20px;
-	}
-}
-
-/* アクセシビリティ対応 */
-@media (prefers-reduced-motion: reduce) {
-	#contents .panel div {
-		transition: none;
-	}
-	
-	#contents .panel div:hover {
-		transform: none;
-	}
-	
-	#contents .panel .box01 a,
-	#contents .panel .box03 a,
-	#contents .panel .box05 a,
-	#contents .panel .box02 a,
-	#contents .panel .box04 a,
-	#contents .panel .box06 a {
-		transition: none;
-	}
-	
-	.tel-number {
-		transition: none;
-	}
-	
-	.tel-number:hover {
-		transform: none;
-		box-shadow: none;
-	}
-}
-
-/* ダークモード対応 */
-@media (prefers-color-scheme: dark) {
-	#contents .panel .box01,
-	#contents .panel .box03,
 	#contents .panel .box05 {
-		background-color: #2a2a2a;
-		border-color: #444;
-		color: #fff;
-	}
-	
-	#contents .panel .box01 a:link,
-	#contents .panel .box01 a:visited,
-	#contents .panel .box03 a:link,
-	#contents .panel .box03 a:visited,
-	#contents .panel .box05 a:link,
-	#contents .panel .box05 a:visited {
-		color: #fff;
-	}
-	
-	#news {
-		background-color: #2a2a2a;
-		color: #fff;
-	}
-	
-	.readtxt01, .readtxt03 {
-		border-bottom-color: #666;
-	}
-	
-	.tel-number {
-		background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%);
-		border-color: #c62842;
-		color: #c62842;
-	}
-	
-	.tel-number:hover {
-		background: linear-gradient(135deg, #c62842 0%, #bf0524 100%);
-		color: #fff;
+		background-color: #c62842;
+		margin: 0px 0px 10px 0px;
 	}
 }
