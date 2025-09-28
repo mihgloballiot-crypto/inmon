@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="ネットワークトラフィック解析ソフト,inMon" />
+<meta name="description" content="ネットワークトラフィック解析ソフトinMonのTraffic Sentinelサーバ監視の説明" />
+
+<title>サーバ監視｜サーバ監視｜inMon TrafficSentinel｜ネットワークトラフィック解析ソフトウェアinMon</title>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../../common/css/cmn_default.css" />
+<link rel="stylesheet" type="text/css" href="../../../common/css/cmn_layout.css" />
+<link rel="stylesheet" type="text/css" href="../../../common/css/cmn_style.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+<!-- javascript -->
+<script src="../../../common/js/jquery.js"></script>
+<script>
+	var sidecurrent = "nv030103";
+</script>
+<script src="../../../common/js/sidenavi.js"></script>
+<script src="../../../common/js/scrolltop.js"></script>
+<script src="//www.marubeni-sys.com/googleanalytics.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="clearfix">
+
+<div id="main">
+<header id="header">
+    <h1>ネットワークトラフィック解析ソフトウェア inMon</h1>
+    <p class="cap">ネットワーク管理者必見、ネットワークトラフィック解析ソフトinMonは<br />1G/10Gの高速ネットワークをプロトコルレベルでリアルタイムに解析できます。</p>
+    <nav>
+        <ul id="snav">
+            <li><a href="../../../sitemap.html">サイトマップ</a></li>
+            <li class="last"><a href="https://go.marubeni-sys.com/l/551742/2018-12-03/7rbdx" target="_blank" rel="noopener">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <div id="msys"><a href="//www.marubeni-sys.com/" target="_blank" rel="noopener"><img src="../../../common/img/rogo_msys.jpg" width="230" height="36" alt="丸紅情報システムズ" /></a></div>
+</header>
+
+<main id="contents">
+  
+<nav aria-label="パンくずリスト">
+    <ul id="pankuzu">
+        <li class="next"><a href="../../../index.html">HOME</a></li>
+        <li class="next">製品</li>
+        <li class="next"><a href="../index.html">inMon TrafficSentinel</a></li>
+        <li>サーバ監視</li>
+    </ul>
+</nav>
+
+<h2 class="ttlPage mgB10">サーバ監視</h2>
+
+<section>
+    <h3 class="ttlLine01">Host sFlow</h3>
+    <p>Traffic Sentinelは、アプリケーション・パフォーマンスの分析のためのツールを、いくつも備えています。</p>
+    
+    <div id="LRarea">
+        <div class="flL" style="width:370px;">
+            <p class="point01">Host sFlow</p>
+            <ul class="type01 mgB15">
+                <li>データセンター内の全てのシステムのパフォーマンス計測を集約し表示</li>
+                <li>計測値を結合</li>
+                <li>計測値を比較</li>
+                <li>フローデータからサービスを検知し、アプリケーションの関連状態をマッピング</li>
+                <li>システムが関連するネットワークリソースや生成されるトラフィックを関連付ける</li>
+            </ul>
+        </div>
+        <div class="flR taC" style="width:300px; padding-top:55px;">
+            <img src="img/img_01_zu02.jpg" width="181" height="185" alt="Host sFlow" />
+        </div>
+        <div class="clearb"></div>
+    </div>
+
+    <p>Host sFlowエージェントは、sFlowのプロトコルを使用して、物理および仮想サーバのパフォーマンスメトリックをエクスポートします。<br />エージェントが監視されているシステムへの影響を最小限に抑えてスケーラブルなマルチベンダー、マルチOSのパフォーマンス監視を提供します。</p>
+    
+    <p class="point01">inMon製品にてサーバなどのCPU、メモリ、ディスクなどのパフォーマンス監視が可能</p>
+    <p class="taC"><img src="img/img_01_zu01.jpg" width="680" height="169" alt="inMon製品にてサーバなどのCPU、メモリ、ディスクなどのパフォーマンス監視が可能" /></p>
+
+    <p>Host sFlowによる、サーバのモニタリングはスイッチが、インターフェース・カウンター値を送るのに用いるのと同じ方法による低負荷なカウンター・プッシュ（sFlow）を用いて、サーバの主要パフォーマンス（CPU、メモリ、ディスクなど）情報を提供できます。
+    これは、オープンソースとして提供され、こちら ( <a href="//host-sflow.sourceforge.net" target="_blank" rel="noopener">//host-sflow.sourceforge.net</a> )から実装(ダウンロードしインストール)することが可能です。<br />
+
+    このデータ・フィードを利用して、TrafficSentinelでは、ネットワーク全体でのサーバや仮想マシン、クラスターのしきい値やトレンド（傾向）を知り、比較するための、包括的で極めてスケーラビリティ（拡張性）の高い各種情報を提供します。<br />
+
+    サーバのパフォーマンスと、それに対応するネットワーク・トラフィックとを直接的に関連付けることで、ネットワークやシステムの管理を一元化し、さらには、完全に自動化され、ネットワーク使用内容を把握したデータセンターとして最適化するための、重要なステップです。<br />
+    <br />
+    インストールに関しては、各OS用のディストリビューション（インストーラーも含む）が用意されています。
+    </p>
+    
+    <div class="mgB15">
+        <p class="fwB mgL5 mgT15">Supported operating systems: </p>
+        <ul class="type01 mgB15">
+            <li>AIX</li>
+            <li>FreeBSD</li>
+            <li>Linux</li>
+            <li>Solaris</li>
+            <li>Windows</li>
+        </ul>
+        
+        <p class="fwB mgL5 mgT15">Supported Linux containers: </p>
+        <ul class="type01 mgB15">
+            <li>Docker</li>
+        </ul>
+        
+        <p class="fwB mgL5 mgT15">Supported hypervisors: </p>
+        <ul class="type01 mgB15">
+            <li>Hyper-V</li>
+            <li>KVM/libvirt</li>
+            <li>Xen/XCP/XenServer</li>
+        </ul>
+        
+        <p class="fwB mgL5 mgT15">Supported switches: </p>
+        <ul class="type01 mgB15">
+            <li>Cumulus Linux </li>
+        </ul>
+    </div>
+
+    <div class="box01">
+        <p class="taC fc_F00">アプリケーション・レイヤーの測定は、インフラ内の各コンポーネントの<br />
+        パフォーマンスと関連付けるとき、さらに重要です。</p>
+    </div>
+</section>
+
+</main>
+</div>
+
+<aside id="side">
+    <div id="rogo"><a href="../../../index.html"><img src="../../../common/img/rogo_inmon.gif" alt="inMon" width="166" height="59" /></a></div>
+    
+    <nav>
+        <ul id="gnavi">
+            <li class="nv01"><a href="../../../index.html">HOME</a></li>
+            <li class="nv02"><a href="../../../about.html">sFlowについて</a></li>
+            <li class="nv03"><span>製品</span>
+                <ul class="sublv01">
+                    <li class="nv0301"><a href="../index.html">inMon TrafficSentinel</a>
+                        <ul class="sublv02">
+                            <li class="nv030102"><a href="../network/japanese.html">ネットワーク監視</a></li>
+                            <ul class="sublv03">
+                                <li class="nv03010201"><a href="../network/japanese.html">日本語対応</a></li>
+                                <li class="nv03010202"><a href="../network/network.html">ネットワーク管理</a></li>
+                                <li class="nv03010203"><a href="../network/reporting.html">レポーティング機能</a></li>
+                                <li class="nv03010204"><a href="../network/dashboard.html">ダッシュボード機能</a></li>
+                                <li class="nv03010205"><a href="../network/explorer.html">エクスプローラ機能</a></li>
+                                <li class="nv03010206"><a href="../network/threshold.html">しきい値</a></li>
+                                <li class="nv03010207"><a href="../network/security.html">セキュリティ管理</a></li>
+                            </ul>
+                            <li class="nv030103"><a href="index.html">サーバ監視</a></li>
+                            <li class="nv030104"><a href="../virtual/index.html">仮想環境監視</a></li>
+                            <li class="nv030105"><a href="../appli/index.html">アプリケーション監視</a></li>
+                        </ul>
+                    </li>
+                    <li class="nv0302"><a href="../../sflowpro/index.html">inMon sFlow Trend-Pro</a></li>
+                    <li class="nv0303"><a href="../../sflow/index.html">inMon sFlow Trend（無償）</a></li>
+                </ul>
+            </li>
+            <li class="nv04"><a href="../../../compchart.html">製品比較</a></li>
+        </ul>
+    </nav>
+    
+    <div id="contact">
+        <p class="mgB10 pdL05">inMon製品をご検討のお客様<br />
+        お気軽にお問い合わせ下さい。</p>
+        <p class="mgB10"><span class="tel-number">TEL:03-4234-4160</span></p>
+        <p><a href="https://go.marubeni-sys.com/l/551742/2018-12-03/7rbdx" target="_blank" rel="noopener"><img src="../../../common/img/sideBtn_contact.jpg" alt="お問い合わせ" width="190" height="29" /></a></p>
+    </div>
+    <div class="mgB10"><a href="https://go.marubeni-sys.com/l/551742/2019-03-07/8ktfp" target="_blank" rel="noopener"><img src="../../../common/img/sideBtn_demo.jpg" alt="デモライセンス申請" width="190" height="57" /></a></div>
+    <div class="mgB10"><a href="//demo.inmon.com/inmsf/Home?action=widgets" target="_blank" rel="noopener"><img src="../../../common/img/sideBtn_onlinedemo.jpg" alt="オンラインデモ" width="190" height="57" /></a></div>
+</aside>
+
+<div id="gotop"><a href="#wrapper"><img src="../../../common/img/gotop.gif" width="48" height="48" alt="ページトップへ" /></a></div>
+
+</div>
+
+<footer id="fooder">
+    <div id="finner">
+        <nav>
+            <ul id="fnavi">
+                <li><a href="https://go.marubeni-sys.com/l/551742/2018-12-03/7rbdx" target="_blank" rel="noopener">お問い合わせ</a></li>
+                <li><a href="//www.marubeni-sys.com/privacy/index.html" target="_blank" rel="noopener">個人情報保護方針</a></li>
+                <li><a href="//www.marubeni-sys.com/security/index.html" target="_blank" rel="noopener">情報セキュリティ基本方針</a></li>
+                <li class="last"><a href="//www.marubeni-sys.com/corporate/info/environment.html" target="_blank" rel="noopener">環境方針</a></li>
+            </ul>
+        </nav>
+        <p id="copy">Copyright(c) Marubeni Information Systems Co.,Ltd. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
